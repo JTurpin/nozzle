@@ -1,0 +1,9 @@
+<h1>Programs</h1>
+
+<ul>
+ {{#each model}}
+ <li>{{#link-to 'program' this}}{{this.id}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}

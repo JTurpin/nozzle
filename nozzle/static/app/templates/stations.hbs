@@ -1,0 +1,10 @@
+<h1>Stations</h1>
+{{input type="text" id="new-station" placeholder="What needs to be done?" 
+              value=name action="createStation"}}
+<ul>
+ {{#each model}}
+ <li>{{#link-to 'station' this}}{{this.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
